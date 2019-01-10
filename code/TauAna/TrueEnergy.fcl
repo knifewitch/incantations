@@ -1,0 +1,8 @@
+BEGIN_PROLOG
+
+true_energy:
+{ 
+ module_type:                 "dune/TauAna/TrueEnergy"
+}
+
+END_PROLOG

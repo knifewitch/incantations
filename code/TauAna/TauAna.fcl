@@ -1,0 +1,8 @@
+BEGIN_PROLOG
+
+tau_ana:
+{ 
+ module_type:                 "dune/TauAna/TauAna"
+}
+
+END_PROLOG

@@ -1,0 +1,37 @@
+# This @product_deps@ file defines dependencies for this package.
+
+# The *parent* line must the first non-commented line and defines this product and version
+# The version must be of the form vxx_yy_zz (e.g. v01_02_03).
+
+parent incantations v07_09_00
+
+defaultqual e17
+
+table_fragment_begin
+    pathPrepend(FHICL_FILE_PATH, .:./job)
+table_fragment_end
+
+# With "product  version" table below, we now define depdendencies
+
+# Add the dependent product and version
+
+product          version
+dunetpc          v07_09_00
+cetbuildtools    v7_04_00       -       only_for_build
+end_product_list
+
+
+# We now define allowed qualifiers and the corresponding qualifiers for the depdencies.
+# Make a table by adding columns before "notes".
+# e15  - with gcc 6.4.0 and -std=c++14
+qualifier dunetpc
+e17:debug e17:debug
+e17:opt   e17:opt
+e17:prof  e17:prof
+end_qualifier_list
+
+# Preserve tabs and formatting in emacs and vi / vim:
+
+### Local Variables:
+### tab-width: 8
+### End:

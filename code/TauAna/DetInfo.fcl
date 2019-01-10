@@ -1,0 +1,8 @@
+BEGIN_PROLOG
+
+det_info:
+{ 
+ module_type:                 "dune/TauAna/DetInfo"
+}
+
+END_PROLOG
