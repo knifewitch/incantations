@@ -1,0 +1,8 @@
+BEGIN_PROLOG
+
+det_info:    { module_type: "code/TauAna/DetInfo"    }
+true_energy: { module_type: "code/TauAna/TrueEnergy" }
+tau_ana:     { module_type: "code/TauAna/TauAna"     }
+lepton_info: { module_type: "code/TauAna/LeptonInfo" }
+
+END_PROLOG
